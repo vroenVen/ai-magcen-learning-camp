@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+import random
+import numpy
+high = 100
+low = 1
+
+top = high
+bottem = low
+num=random.randint(low, high)
+guess = -1
+    
+        
+print('number is',num)
+        
+while guess != num:
+    guess = round((top + bottem)/2)
+    if guess < num:
+        bottem = guess
+    if guess>num:
+        top = guess
+    print(guess)
